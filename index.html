@@ -34,14 +34,14 @@
     <header>
         <!-- Navbar Starts Here -->
         <nav>
-            <div class="md:flex md:justify-between px-16 py-6 items-center sm:">
+            <div class="md:flex md:justify-between px-16 py-6 items-center">
                 <div class="flex items-center gap-3">
                     <img class="h-12 w-12" src="./assets/logo.png" alt="">
                     <h2 class="text-[18px] font-bold text-[#006747]">Emergency <br>Service</h2>
                 </div>
                 <div class="flex md:justify-between md:items-center gap-6 flex-col md:flex-row items-center">
                     <div class="flex gap-5 bg-[#41FF6B1A] rounded-3xl">
-                        <p class="text-[20px] font-bold">0</p>
+                        <p class="text-[20px] font-bold" id="counter">0</p>
                         <img class="h-8 w-8" src="./assets/heart.png" alt="">
                     </div>
                     <div class="flex gap-5 bg-[#41FF6B1A] rounded-3xl">
@@ -76,12 +76,15 @@
 
         <div class="grid md:grid-cols-4 grid-cols-2 col">
             <div class="ml-14 mt-12 grid md:grid-cols-3 grid-cols-1 gap-8 col-span-3 mr-[50px] sm:mr-[20px]">
+
+                <!-- Card-1  -->
+
                 <div class="bg-[#FFFF] p-8 shadow-md rounded-xl">
                     <div class="flex items-center justify-between">
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="heart-icon fa-regular fa-heart" id="heart-icn"></i>
 
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">জাতীয় জরুরি সেবা</h2>
@@ -104,7 +107,7 @@
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/police.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="heart-icon fa-regular fa-heart"></i>
 
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">পুলিশ</h2>
@@ -128,7 +131,7 @@
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/fire-service.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="heart-icon fa-regular fa-heart"></i>
 
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">ফায়ার সার্ভিস</h2>
@@ -148,7 +151,7 @@
                 <!-- Card-4  -->
 
                 <div class="bg-[#FFFF] p-8 shadow-md rounded-xl">
-                    <div class="flex items-center justify-between">
+                    <div class="heart-icon flex items-center justify-between">
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/ambulance.png" alt="">
                         </div>
@@ -176,7 +179,7 @@
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="heart-icon fa-regular fa-heart"></i>
 
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">নারী ও শিশু সহায়তা</h2>
@@ -199,7 +202,7 @@
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="heart-icon fa-regular fa-heart"></i>
 
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">দুদক</h2>
@@ -223,7 +226,7 @@
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="heart-icon fa-regular fa-heart"></i>
 
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">বিদ্যুৎ বিভ্রাট</h2>
@@ -247,7 +250,7 @@
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="heart-icon fa-regular fa-heart"></i>
 
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">ব্র্যাক</h2>
@@ -262,12 +265,15 @@
                                 class="fa-solid fa-phone-volume"></i> Call</button>
                     </div>
                 </div>
+
+                <!-- Card-9  -->
+
                 <div class="bg-[#FFFF] p-8 shadow-md rounded-xl">
                     <div class="flex items-center justify-between">
                         <div class="h-[60px] w-[60px]">
                             <img src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="heart-icon fa-regular fa-heart"></i>
 
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">বাংলাদেশ রেলওয়ে</h2>
@@ -302,7 +308,7 @@
 
 
 
-
+<script src="./script.js"></script>
 </body>
 
 </html>
