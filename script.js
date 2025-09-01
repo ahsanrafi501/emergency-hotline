@@ -112,6 +112,14 @@ document.getElementById("card9-call-btn").addEventListener('click', function (e)
 
 // clear the history
 
+document.getElementById("clear-history").addEventListener("click", function(){
+    const callHistory = document.getElementById('history-added');
+    const childCallHistory = callHistory.querySelectorAll('div');
+
+    childCallHistory.forEach(div => div.remove());
+})
+
+
 
 
 
