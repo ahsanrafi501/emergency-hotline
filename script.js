@@ -26,12 +26,6 @@ function callCoin(service, number) {
   const newCoin = availableCoin - coin;
   alert('Service: ' + service + 'Number: ' + 999);
   document.getElementById('coins').innerText = newCoin;
-
-}
-
-function addHistory(service, number){
-  const availableCoin = parseInt(document.getElementById('coins').innerText);
-  
   const date = new Date();
   const time = date.toLocaleTimeString();
   const callHistory = document.getElementById('history-added');
@@ -52,7 +46,10 @@ function addHistory(service, number){
   `
 
   callHistory.appendChild(newDiv);
+
 }
+
+
 
 
 
@@ -61,7 +58,6 @@ document.getElementById("card1-call-btn").addEventListener('click', function (e)
   const services = 'জাতীয় জরুরি সেবা';
   const number = 999;
   callCoin(services, number);
-  addHistory(services, number);
 })
 
 document.getElementById("card2-call-btn").addEventListener('click', function (e) {
@@ -69,57 +65,54 @@ document.getElementById("card2-call-btn").addEventListener('click', function (e)
   const services = 'পুলিশ';
   const number = 999;
   callCoin(services, number);
-  addHistory(services, number);
 })
 document.getElementById("card3-call-btn").addEventListener('click', function (e) {
   e.preventDefault();
   const services = 'ফায়ার সার্ভিস';
   const number = 999;
   callCoin(services, number);
-  addHistory(services, number);
 })
 document.getElementById("card4-call-btn").addEventListener('click', function (e) {
   e.preventDefault();
   const services = 'অ্যাম্বুলেন্স';
   const number = 1994999999;
   callCoin(services, number);
-  addHistory(services, number);
 })
 document.getElementById("card5-call-btn").addEventListener('click', function (e) {
   e.preventDefault();
   const services = 'নারী ও শিশু সহায়তা';
   const number = 109;
   callCoin(services, number);
-  addHistory(services, number);
 })
 document.getElementById("card6-call-btn").addEventListener('click', function (e) {
   e.preventDefault();
   const services = 'দুদক';
   const number = 106;
   callCoin(services, number);
-  addHistory(services, number);
 })
 document.getElementById("card7-call-btn").addEventListener('click', function (e) {
   e.preventDefault();
   const services = 'বিদ্যুৎ বিভ্রাট';
   const number = 16216;
   callCoin(services, number);
-  addHistory(services, number);
 })
 document.getElementById("card8-call-btn").addEventListener('click', function (e) {
   e.preventDefault();
   const services = 'ব্র্যাক';
   const number = 16445;
   callCoin(services, number);
-  addHistory(services, number);
 })
 document.getElementById("card9-call-btn").addEventListener('click', function (e) {
   e.preventDefault();
   const services = 'বাংলাদেশ রেলওয়ে';
   const number = 163;
   callCoin(services, number);
-  addHistory(services, number);
 })
+
+
+// clear the history
+
+
 
 
 
