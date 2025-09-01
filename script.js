@@ -120,11 +120,16 @@ document.getElementById("clear-history").addEventListener("click", function () {
 })
 
 
+
+
+
+// Copy Button 
+
+
 const allCopyButtons = document.querySelectorAll('.copy-btn');
 const countCopyElement = document.getElementById('copyCounter');
 
 let copyCount = 0;
-
 
 function handleCopyClick(event) {
   const button = event.target;
