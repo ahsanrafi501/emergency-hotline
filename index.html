@@ -50,7 +50,7 @@
                     </div>
                     <div class="">
                         <button
-                            class="btn btn-warning bg-[#00A63E] rounded-[50px] shadow-sm text-[#ffff] text-[16px] font-bold h-12 w-32"><span>2</span>Copy</button>
+                            class="btn btn-warning bg-[#00A63E] rounded-[50px] shadow-sm text-[#ffff] text-[16px] font-bold h-12 w-32"><span id="copyCounter">0</span>Copy</button>
                     </div>
                 </div>
             </div>
@@ -90,10 +90,10 @@
                     </div>
                     <h2 class="text-[24px] font-bold pt-[16px]">জাতীয় জরুরি সেবা</h2>
                     <p class="text-[18px] text-[#5C5C5C] font-medium roboto">National Emergency</p>
-                    <p class="roboto font-bold text-[32px] pt-5">999</p>
+                    <p class="roboto font-bold text-[32px] pt-5 number-to-copy">999</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">সার্বজনীন</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="999"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px]  call-btn"
@@ -116,7 +116,7 @@
                     <p class="roboto font-bold text-[32px] pt-5">999</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">পুলিশ</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="999"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px] call-btn" id="card2-call-btn"><i
@@ -140,7 +140,7 @@
                     <p class="roboto font-bold text-[32px] pt-5">999</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">ফায়ার</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="999"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px]  call-btn" id="card3-call-btn"><i
@@ -164,7 +164,7 @@
                     <p class="roboto font-bold text-[32px] pt-5">1994-999999</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">স্বাস্থ্য</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="1994-999999"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px]  call-btn" id="card4-call-btn"><i
@@ -188,7 +188,7 @@
                     <p class="roboto font-bold text-[32px] pt-5">109</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">সহায়তা</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="109"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px]  call-btn" id="card5-call-btn"><i
@@ -211,7 +211,7 @@
                     <p class="roboto font-bold text-[32px] pt-5">106</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">সরকারি</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="106"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px]  call-btn" id="card6-call-btn"><i
@@ -235,7 +235,7 @@
                     <p class="roboto font-bold text-[32px] pt-5">16216</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">বিদ্যুৎ</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="16216"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px]  call-btn" id="card7-call-btn"><i
@@ -259,7 +259,7 @@
                     <p class="roboto font-bold text-[32px] pt-5">16445</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">এনজিও</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="16445"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px]  call-btn" id="card8-call-btn"><i
@@ -282,7 +282,7 @@
                     <p class="roboto font-bold text-[32px] pt-5">163</p>
                     <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] rounded-xl w-[103px] text-center">পরিবহন</p>
                     <div class="my-8">
-                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px]"><i
+                        <button class="btn roboto text-[16px] text-[#5C5C5C] py-[10px] sm:px-[35px] rounded-[8px] copy-btn" data-copy="163"><i
                                 class="fa-solid fa-copy"></i>Copy</button>
                         <button
                             class="btn btn-warning roboto  bg-[#00A63E] rounded-[8px] text-[#ffff] text-[16px] py-[10px]" id="card9-call-btn"><i

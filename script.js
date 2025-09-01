@@ -112,12 +112,41 @@ document.getElementById("card9-call-btn").addEventListener('click', function (e)
 
 // clear the history
 
-document.getElementById("clear-history").addEventListener("click", function(){
-    const callHistory = document.getElementById('history-added');
-    const childCallHistory = callHistory.querySelectorAll('div');
+document.getElementById("clear-history").addEventListener("click", function () {
+  const callHistory = document.getElementById('history-added');
+  const childCallHistory = callHistory.querySelectorAll('div');
 
-    childCallHistory.forEach(div => div.remove());
+  childCallHistory.forEach(div => div.remove());
 })
+
+
+const allCopyButtons = document.querySelectorAll('.copy-btn');
+const countCopyElement = document.getElementById('copyCounter');
+
+let copyCount = 0;
+
+
+function handleCopyClick(event) {
+  const button = event.target;
+  const textToCopy = button.dataset.copy;
+  navigator.clipboard.writeText(textToCopy).then(() => {
+
+    copyCount++;
+
+    if (countCopyElement) {
+      countCopyElement.innerText = copyCount;
+    }
+
+    alert(`Copied: ${textToCopy}`);
+
+  }).catch(err => {
+
+    console.error('Could not copy text: ', err);
+  });
+}
+for (let button of allCopyButtons) {
+  button.addEventListener('click', handleCopyClick);
+}
 
 
 
