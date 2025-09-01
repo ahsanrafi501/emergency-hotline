@@ -31,9 +31,6 @@ function callCoin(service, number) {
 
 function addHistory(service, number){
   const availableCoin = parseInt(document.getElementById('coins').innerText);
-  if(counts == count){
-    return;
-  }
   
   const date = new Date();
   const time = date.toLocaleTimeString();
